@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Application Form</h1>
+    <p>Fill in your details</p>
+
+    <form>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="" disabled selected>Select gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="education">Education Level:</label>
+        <select id="education" name="education" required>
+            <option value="" disabled selected>Select level of education</option>
+            <option value="highSchool">High School</option>
+            <option value="college">College</option>
+            <option value="university">University</option>
+        </select>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="" disabled selected>Select your country</option>
+            <!-- Add more country options as needed -->
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ca">Canada</option>
+        </select>
+
+        <label for="State">State/City of Residence:</label>
+        <select id="State" name="State/City of Residence" required>
+            </select>
+
+        <label for="employment">Employment Status:</label>
+        <select id="employment" name="Employment Status" required>
+            <option value="select employment status">Select employment status</option>
+            <option value="employed">Employed</option>
+            <option value="un-employed">Un-employed</option>
+            <option value="self employed">Self employed</option>
+        </select>
+
+        <label for="phone">Phone number:</label>
+        <input type="phone" name="Phone number" required>
+
+        <label for="Choose">Choose School:</label>
+        <select id="Choose" name="Choose School" required>
+            <option value="select school">Select school</option>
+            <option value="Navigating the Music Business in Africa">Navigating the Music Business in Africa</option>
+            <option value="Content Mastery for African Creators">Content Mastery for African Creators</option>
+           </select>
+            
+        <label for="Choose">Choose Course of Study:</label>
+        <select id="Choose" name="Choose Course of Study" required>
+               <option value="select course">Select course</option>
+               <option value="School of creative Ecoonomy">School of Creative Economy</option>
+               <option value="School of Business">School of Business</option>
+              </select>
+
+        <label for="How">How did you hear about us:</label>
+        <select id="channel" name="Channel" required>
+                  <option value="select channel">Select channel</option>
+                  <option value="Facebook">Facebook</option>
+                  <option value="Linkedin">Linkedin</option>
+                  <option value="Youtube">Youtube</option>
+                  <option value="Friend">Friend</option>
+                  <option value="Whatsapp">Whatsapp</option>
+                  <option value="Instagram">Instagram</option>
+                  <option value="Billboard">Billboard</option>
+                  <option value="Other">Other</option>
+                 </select>
+   
+         <label for="Scholarship">Scholarship/Discount Code (optional):</label>
+        <input type="Scholarship" name="Scholarship or student ID" required>
+
+        <!-- Add more form fields as needed -->
+
+        <button type="submit">Proceed</button>
+    </form>
+
+    <p>By clicking continue, I agree to <a href="#">Terms of Use</a> and acknowledge that I have read the <a href="#">Privacy Policy</a>.</p>
+</body>
+</html>
